@@ -12,6 +12,7 @@
 // import runs first
 // Destructuring variables & callback func from ./utils.js
 const { myName, add } = require('./utils.js')
+// Destructuring the only callback fun in ./notes.js
 const { getNotes } = require('./notes.js')
 
 const sum = add(1,10)
