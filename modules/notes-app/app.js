@@ -57,11 +57,12 @@ console.log(`process.argv[2]:\n${process.argv[2]}`)
 console.log(`\n`)
 const command = process.argv[2]
 
+// If command input === 'add' or 'ADD'
 if (command.toLowerCase() === 'add') {
-    console.log(`${chalk.green("command === 'add'")}:\n${chalk.green(command)}`)
+    console.log(`${chalk.green("command.toLowerCase() === 'add'")}:\n${chalk.green(command)}`)
 } else if (command.toLowerCase() === 'remove') {
-    console.log(`${chalk.green("command === 'remove'")}:\n${chalk.green(command)}`)  
+    console.log(`${chalk.green("command.toLowerCase() === 'remove'")}:\n${chalk.green(command)}`)  
 } else {
-    console.log(`${chalk.red("command !== 'add'")}:\n${chalk.white.bgRed(command)}`)
+    console.log(`${chalk.red("command.toLowerCase() !== 'add/remove'")}:\n${chalk.white.bgRed(command)}`)
 }
 
